@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+* {
+  margin: 0;
+}
+
+nav {
+  font-family: "Lato", sans-serif;
+  background-color: blueviolet;
+  padding: 10px 20px 10px 40px;
+  border: 1px solid blueviolet;
+  border-left: none;
+  border-right: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav ul .items {
+  display: flex;
+}
+
+nav ul .items li {
+  margin: 10px;
+}
+
+nav ul li.logo {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.search-icon {
+}

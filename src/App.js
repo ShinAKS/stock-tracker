@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import priceData from "./data";
+import moment from "moment";
+import ReactHighcharts from "react-highcharts/ReactHighstock.src";
+import StockChart from "./components/StockChart";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <div className="left">
+        <div className="stock__graph">
+          <StockChart />
+        </div>
+        <div className="stock__statement"></div>
+      </div>
+      <div className="right">
+        {/* Top Gainers */}
+        {/* Top Losers */}
+        {/* Key Persons */}
+      </div>
     </div>
   );
 }
